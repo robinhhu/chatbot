@@ -36,7 +36,7 @@ int splitWords(char output[][20], char input[])
 	int i = 0,index = 0;
 	while(1)
 	{
-		if(input[i] != ' ' && input[i] != ',' && input[i] != '\0')
+		if(input[i] != ' ' && input[i] != ',' && input[i] != '\0' && input[i] != '\n')
 			temp[index ++] = input[i];
 		else if(index != 0)
 		{
@@ -109,20 +109,6 @@ int modifyInput(char output[][20], char input[])
 		stemWords(output[i]);
 	return wordsCount;
 }
-
-// Count the score for a given string list
-// With a class string value
-double countScore(char input[][20], Key wordList)
-{
-	return 0;
-}
-
-// Find the max countScore in the linked list
-// Return the index
-int findMax(char input[][20])
-{
-	return 0;
-}   
 
 
 

@@ -1,10 +1,13 @@
 // The training data structure
+#define MAX_STRING_LENGTH 20
+#define MAX_STRING_NUMBER 20
 
 struct data {
 	int index;
-	char className[15];
-	char answer[30];
+	int numwords;
+	char *className;
+	char *answer;
 	struct data *next;
-	char words[][20];
+	char words[MAX_STRING_NUMBER][MAX_STRING_LENGTH];
 };
 typedef struct data Key;
