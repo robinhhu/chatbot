@@ -5,6 +5,7 @@
 #include <string.h>
 #include "readinput.h"
 #include "writeoutput.h"
+#include "freeKeys.h"
 
 int main()
 {
@@ -17,15 +18,10 @@ int main()
 	while(strcmp(input,"exit\n"))
 	{
 		int count = modifyInput(output,input);
-		int i = 0;
-		for(;i < count;i ++)
-		{
-			printf("%s\n",output[i]);
-		}
-		printf("%d\n",findMax(output,header,count));
-		//fputs(findMax(output,header),stdout);
+		printf("%s\n",returnReply(output,header,count));
 		printf(">>");
 		fgets(input,100,stdin);
 	}
+	freeKeys(header);
 	return 0;
 }

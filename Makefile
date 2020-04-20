@@ -4,7 +4,7 @@
 EXE_DIR = .
 EXE = $(EXE_DIR)/chatbot
 
-SRC= main.c readinput.c writeoutput.c
+SRC= main.c readinput.c writeoutput.c freeKeys.c
 
 # generic build details
 
@@ -35,3 +35,4 @@ clean:
 main.o:  main.c datastructure.h readinput.h writeoutput.h
 readinput.o: datastructure.h readinput.h
 writeoutput.o: datastructure.h writeoutput.h
+freeKeys.o: datastructure.h freeKeys.h

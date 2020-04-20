@@ -94,7 +94,7 @@ void stemWords(char input[])
 		else
 			input[s] = '\0';	
 	}
-	else if(e != 1 && input[e - 1] != 'a' && input[e - 1] != 'e' && input[e - 1] != 'i' && input[e - 1] != 'o' && input[e - 1] != 'u' && (input[e - 2] == 'a' || input[e - 2] == 'e' || input[e - 2] == 'i' || input[e - 2] == 'o' || input[e - 2] == 'u') && strlen(input) < 5)
+	else if(e != -1 && strlen(input) < 5)
 		input[e] = '\0';
 	return;	
 }

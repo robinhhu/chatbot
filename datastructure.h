@@ -1,6 +1,7 @@
 // The training data structure
 #define MAX_STRING_LENGTH 20
 #define MAX_STRING_NUMBER 20
+//#define MAX_ANSWER_LENGTH 50
 
 struct data {
 	int index;
