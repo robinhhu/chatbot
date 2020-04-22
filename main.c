@@ -9,7 +9,7 @@
 
 int main()
 {
-	printf("chatbot:Hi!\n>>");
+	printf("chatbot:Hi! (type \"exit\" to exit)\n>>");
 	char input[100];
 	char output[100][20];
 	Key *header = malloc(sizeof(Key));

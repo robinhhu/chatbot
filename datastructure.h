@@ -6,7 +6,6 @@
 struct data {
 	int index;
 	int numwords;
-	char *className;
 	char *answer;
 	struct data *next;
 	char words[MAX_STRING_NUMBER][MAX_STRING_LENGTH];
